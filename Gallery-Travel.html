@@ -5,7 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/3ecf1d151d.js" crossorigin="anonymous"></script>
+    <script src="https://at.alicdn.com/t/font_2204911_3xbiosihq16.js"></script>
     <title>Sapphire|Travel</title>
+    <style media="screen">
+      #title0{
+        margin-top:3.5%
+      }
+      #img img{
+        width: 100%;
+        transition:all 0.3s;/*图片放大过程的时间*/
+        position: relative;
+      }
+      img:hover{
+        cursor: crosshair;
+        transform: scale(1.1);  /*以y轴为中心旋转*/
+      }
+      #footer{
+        margin-bottom: 1%;
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -51,14 +69,51 @@
       </div>
     </nav>
 
-    <div class="container">
-      <br>
-      <h1 id="h1">Travel</h1>
-      <p id="p1">Discover hidden wonders and inspiring destinations around the world from the comfort of your own home.</p>
-      <p><i class="fas fa-gem"></i><br>
-          Curated by <span style="text-decoration:underline">Sapphire</span>
-          <br>
-      </p>
+    <div id="title0" class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <h1>Travel</h1>
+          <p>Discover hidden wonders and inspiring destinations around the world from the comfort of your own home.</p>
+          <p><i class="fas fa-gem"></i><br>
+              Curated by <span style="text-decoration:underline">Sapphire</span>
+          </p>
+        </div>
+        <div class="col-md-5">
+          <div class="card mb-5 shadow-sm">
+            <div class="card-body">
+              <div>
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-tedianshandianfahuo"></use>
+                </svg> Status
+                <button type="button" class="btn btn-md float-right" style="background-color: lightgreen;">
+                  <div id="circle" style="position: middle;"></div>
+                </button>
+              </div>
+              <hr>
+              <div>
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-yonghutouxiang"></use>
+                </svg> Curator
+                <div class="float-right"><i class="fas fa-gem"></i> Sapphire</div>
+              </div>
+              <hr>
+              <div>
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-tubiaozhizuomoban-"></use>
+                </svg> Contributions
+                <strong class="float-right">80</strong>
+              </div>
+              <hr>
+              <div>
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-icon"></use>
+                </svg> Upcoming
+                <div class="float-right">December 2020</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="container">
