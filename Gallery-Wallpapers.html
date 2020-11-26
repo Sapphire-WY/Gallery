@@ -3,122 +3,187 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/3ecf1d151d.js" crossorigin="anonymous"></script>
+    <!-- iconfont -->
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_2204911_qhj2jm0mpdp.css">
+    <script src="https://at.alicdn.com/t/font_2204911_qhj2jm0mpdp.js"></script>
+    <!-- lzayload -->
+    <script src="https://cdn.bootcss.com/jquery/2.1.0/jquery.min.js"></script>
     <title>Sapphire|Wallpapers</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/product/">
+    <!-- Bootstrap core CSS -->
+    <link href="/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/docs/4.5/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/4.5/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/4.5/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+    <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon.ico">
+    <meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#563d7c">
+    <style>
+      #img-bg{
+        background-size: cover;
+        background-attachment: fixed;
+        margin: auto;
+      }
+      #top{
+        position: absolute;
+        width: 100%;
+        height: 0;
+      }
+      #title1{
+        position: absolute;
+        width:100%;
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="product.css" rel="stylesheet">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">
-        <i class="fas fa-gem"></i> Sapphire
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Wallpapers</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./Gallery-Travel.html">Travel</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./Gallery-Business.html">Business & Work</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./Gallery-Technology.html">Technology</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./Gallery-Food.html">Food & Drinks</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./Gallery-Architecture.html">Architecture</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              View more
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="./Sapphire-About.html">About</a>
-              <a class="dropdown-item" href="./Sapphire-Join.html">Join us</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div id="top">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <a class="navbar-brand" href="#">
+          <i class="fas fa-gem"></i> Sapphire
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Gallery-Wallpapers.html">Wallpapers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Gallery-Travel.html">Travel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Gallery-Business.html">Business & Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Gallery-Technology.html">Technology</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Gallery-Food.html">Food & Drinks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Gallery-Architecture.html">Architecture</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                View more
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="./Sapphire-About.html">About</a>
+                <a class="dropdown-item" href="./Sapphire-Join.html">Join us</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-    <div class="container">
-      <br>
-      <h1 id="h1">Wallpapers</h1>
-      <p id="p1">From epic drone shots to inspiring moments in nature, find free HD wallpapers worthy of your mobile and desktop screens. Finally.</p>
-      <p><i class="fas fa-gem"></i><br>
-          Curated by <span style="text-decoration:underline">Sapphire</span>
-          <br>
-      </p>
+    <div id="title1" class="text-center">
+      <div class="col-md-5 p-lg-5 mx-auto my-5">
+        <h1 class="display-4 font-weight-normal">Punny headline</h1>
+        <p class="lead font-weight-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple’s marketing pages.</p>
+        <a class="btn btn-outline-secondary" href="#">Coming soon</a>
+      </div>
+      <div class="product-device shadow-sm d-none d-md-block"></div>
+      <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
     </div>
 
-    <div class="container">
+    <img src="./annie.jpg" class="img-fluid" alt="Responsive image" id="img-bg">
+
+
+    <footer class="container py-5">
       <div class="row">
-        <div class="col-md-4">
-          <img src="./Wallpapers/001.jpg" class="img-fluid" alt="Responsive image">
-          <h5><br></h5>
-          <img src="./Wallpapers/004.jpg" class="img-fluid" alt="Responsive image">
-          <h5><br></h5>
-          <img src="./Wallpapers/007.jpg" class="img-fluid" alt="Responsive image">
-          <h5><br></h5>
-          <img src="./Wallpapers/009.jpg" class="img-fluid" alt="Responsive image">
-          <h5><br></h5>
-          <img src="./Wallpapers/012.jpg" class="img-fluid" alt="Responsive image">
-          <h5><br></h5>
-          <img src="./Wallpapers/016.jpg" class="img-fluid" alt="Responsive image">
-          <h5><br></h5>
-          <img src="./Wallpapers/019.jpg" class="img-fluid" alt="Responsive image">
-          <h5><br></h5>
-          <img src="./Wallpapers/023.jpg" class="img-fluid" alt="Responsive image">
-          <h5><br></h5>
+        <div class="col-12 col-md">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+          <small class="d-block mb-3 text-muted">&copy; 2017-2020</small>
         </div>
-        <div class="col-md-4">
-          <img src="./Wallpapers/002.jpg" class="img-fluid" alt="Responsive image">
-          <h5><br></h5>
-          <img src="./Wallpapers/005.jpg" class="img-fluid" alt="Responsive image">
-          <h5><br></h5>
-          <img src="./Wallpapers/008.jpg" class="img-fluid" alt="Responsive image">
-          <h5><br></h5>
-          <img src="./Wallpapers/013.jpg" class="img-fluid" alt="Responsive image">
-          <h5><br></h5>
-          <img src="./Wallpapers/017.jpg" class="img-fluid" alt="Responsive image">
-          <h5><br></h5>
-          <img src="./Wallpapers/020.jpg" class="img-fluid" alt="Responsive image">
-          <h5><br></h5>
-          <img src="./Wallpapers/024.jpg" class="img-fluid" alt="Responsive image">
-          <h5><br></h5>
-          <img src="./Wallpapers/025.jpg" class="img-fluid" alt="Responsive image">
-          <h5><br></h5>
+        <div class="col-6 col-md">
+          <h5>Features</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Cool stuff</a></li>
+            <li><a class="text-muted" href="#">Random feature</a></li>
+            <li><a class="text-muted" href="#">Team feature</a></li>
+            <li><a class="text-muted" href="#">Stuff for developers</a></li>
+            <li><a class="text-muted" href="#">Another one</a></li>
+            <li><a class="text-muted" href="#">Last time</a></li>
+          </ul>
         </div>
-        <div class="col-md-4">
-          <img src="./Wallpapers/003.jpg" class="img-fluid" alt="Responsive image">
-          <h5><br></h5>
-          <img src="./Wallpapers/006.jpg" class="img-fluid" alt="Responsive image">
-          <h5><br></h5>
-          <img src="./Wallpapers/014.jpg" class="img-fluid" alt="Responsive image">
-          <h5><br></h5>
-          <img src="./Wallpapers/018.jpg" class="img-fluid" alt="Responsive image">
-          <h5><br></h5>
-          <img src="./Wallpapers/021.jpg" class="img-fluid" alt="Responsive image">
-          <h5><br></h5>
-          <img src="./Wallpapers/022.jpg" class="img-fluid" alt="Responsive image">
-          <h5><br></h5>
-          <img src="./Wallpapers/026.jpg" class="img-fluid" alt="Responsive image">
-          <h5><br></h5>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Resource</a></li>
+            <li><a class="text-muted" href="#">Resource name</a></li>
+            <li><a class="text-muted" href="#">Another resource</a></li>
+            <li><a class="text-muted" href="#">Final resource</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Business</a></li>
+            <li><a class="text-muted" href="#">Education</a></li>
+            <li><a class="text-muted" href="#">Government</a></li>
+            <li><a class="text-muted" href="#">Gaming</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>About</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Team</a></li>
+            <li><a class="text-muted" href="#">Locations</a></li>
+            <li><a class="text-muted" href="#">Privacy</a></li>
+            <li><a class="text-muted" href="#">Terms</a></li>
+          </ul>
         </div>
       </div>
-    </div>
+    </footer>
+
+    <script>
+      // 一开始没有滚动的时候，出现在视窗中的图片也会加载
+      start();
+      // 当页面开始滚动的时候，遍历图片，如果图片出现在视窗中，就加载图片
+      var clock; //函数节流
+      $(window).on('scroll',function(){
+        if(clock){
+        clearTimeout(clock);
+        }
+        clock = setTimeout(function(){
+          start()
+        },50)
+      })
+      function start(){
+        $('.container img').not('[data-isLoading]').each(function () {
+          if (isShow($(this))) {
+            loadImg($(this));
+          }
+        })
+      }
+      // 判断图片是否出现在视窗的函数
+      function isShow($node){
+        return $node.offset().top <= $(window).height()+$(window).scrollTop();
+      }
+      // 加载图片的函数，就是把自定义属性data-src 存储的真正的图片地址，赋值给src
+      function loadImg($img){
+        $img.attr('src', $img.attr('data-src'));
+        // 已经加载的图片，我给它设置一个属性，值为1，作为标识
+        // 弄这个的初衷是因为，每次滚动的时候，所有的图片都会遍历一遍，这样有点浪费，所以做个标识，滚动的时候只遍历哪些还没有加载的图片
+        $img.attr('data-isLoading',1);
+      }
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   </body>
