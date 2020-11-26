@@ -15,13 +15,14 @@
     <title>Sapphire|Architecture</title>
     <style media="screen">
       #top{
+        /* z-index的基础 建立在position之上 */
         position: fixed;
         z-index: 10;
         width: 100%;
         top: 0;
       }
       #title0{
-        margin-top: 8.2%;
+        margin-top: 8.5%;
       }
       #img img{
         width: 100%;
@@ -51,7 +52,7 @@
     </style>
   </head>
   <body>
-    <div id="top" class="">
+    <div id="top" class="sticky-top">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
           <i class="fas fa-gem"></i> Sapphire
