@@ -3,10 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/3ecf1d151d.js" crossorigin="anonymous"></script>
-    <script src="https://at.alicdn.com/t/font_2204911_uud8ht4mlrr.js"></script>
-    <link rel="stylesheet" href="https://at.alicdn.com/t/font_2204911_xvu940tzvri.css">
+    <!-- iconfont -->
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_2204911_2hkdhfzh0ey.css">
+    <script src="https://at.alicdn.com/t/font_2204911_2hkdhfzh0ey.js"></script>
+    <!-- lzayload -->
+    <script src="https://cdn.bootcss.com/jquery/2.1.0/jquery.min.js"></script>
     <title>Sapphire|Join</title>
     <style media="screen">
       #h1{
@@ -133,7 +138,7 @@
           <div class="d-none d-md-block" class="col-md-5">
             <br>
             <br>
-            <img src="./About/002.png" alt="" width="413px" height="568px">
+            <img src="./About/002.png" data-src="./About/002-Original.png" alt="" width="413px" height="568px">
           </div>
         </div>
       </div>
@@ -164,9 +169,41 @@
       </footer><br>
     </nav>
 
+    <script>
+      // 一开始没有滚动的时候，出现在视窗中的图片也会加载
+      start();
+      // 当页面开始滚动的时候，遍历图片，如果图片出现在视窗中，就加载图片
+      var clock; //函数节流
+      $(window).on('scroll',function(){
+        if(clock){
+        clearTimeout(clock);
+        }
+        clock = setTimeout(function(){
+          start()
+        },50)
+      })
+      function start(){
+        $('.container img').not('[data-isLoading]').each(function () {
+          if (isShow($(this))) {
+            loadImg($(this));
+          }
+        })
+      }
+      // 判断图片是否出现在视窗的函数
+      function isShow($node){
+        return $node.offset().top <= $(window).height()+$(window).scrollTop();
+      }
+      // 加载图片的函数，就是把自定义属性data-src 存储的真正的图片地址，赋值给src
+      function loadImg($img){
+        $img.attr('src', $img.attr('data-src'));
+        // 已经加载的图片，我给它设置一个属性，值为1，作为标识
+        // 弄这个的初衷是因为，每次滚动的时候，所有的图片都会遍历一遍，这样有点浪费，所以做个标识，滚动的时候只遍历哪些还没有加载的图片
+        $img.attr('data-isLoading',1);
+      }
+    </script>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
   </body>
 </html>
