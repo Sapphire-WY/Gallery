@@ -1,0 +1,1993 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Mobile Redirect -->
+    <script type="text/javascript">
+      function browserRedirect() {
+        var sUserAgent= navigator.userAgent.toLowerCase();
+        var bIsIpad= sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs= sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp= sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7= sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc= sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid= sUserAgent.match(/android/i) == "android";
+        var bIsCE= sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM= sUserAgent.match(/windows mobile/i) == "windows mobile";
+
+        if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+          window.location.href= '../MOBILE/Gallery-Business.html';
+        } else {
+          // window.location='';
+        }
+      }
+      browserRedirect();//调用自身，页面一打开就开始跳转
+    </script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/3ecf1d151d.js" crossorigin="anonymous"></script>
+    <!-- iconfont -->
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_2204911_2hkdhfzh0ey.css">
+    <script src="https://at.alicdn.com/t/font_2204911_2hkdhfzh0ey.js"></script>
+    <!-- lzayload -->
+    <script src="https://cdn.bootcss.com/jquery/2.1.0/jquery.min.js"></script>
+    <title>Sapphire|Business</title>
+    <style media="screen">
+      #top{
+        /* z-index的基础 建立在position之上 */
+        position: fixed;
+        z-index: 10;
+        width: 100%;
+        top: 0;
+      }
+      #title0{
+        margin-top: 8.5%;
+      }
+      #img img{
+        width: 100%;
+        transition:all 0.3s;/*图片放大过程的时间*/
+        position: relative;
+      }
+      img:hover{
+        cursor: crosshair;
+        transform: scale(1.1);  /*以y轴为中心旋转*/
+      }
+      #footer{
+        margin-bottom: 1%;
+      }
+      #circle{
+        width: 6px;
+        height: 6px;
+        background-color: green;
+        border-radius: 50%;
+      }
+      .icon {
+        width: 1.78em;
+        height: 1.78em;
+        vertical-align: -0.46em;
+        fill: currentColor;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="top" class="sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <i class="fas fa-gem"></i> Sapphire
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Gallery-Special.html">Special</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Gallery-Travel.html">Travel</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Business & Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Gallery-Technology.html">Technology</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Gallery-Food.html">Food & Drinks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Gallery-Architecture.html">Architecture</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                View more
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="./Sapphire-About.html">About</a>
+                <a class="dropdown-item" href="./Sapphire-Join.html">Join us</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div id="title0" class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <p></p>
+          <h1>Business & Work</h1>
+          <p>Reflecting the realities of the modern workplace in their many forms - from images of remote working and start-ups to shots of engineers and artists at work.</p>
+          <p><i class="fas fa-gem"></i><br>
+              Curated by <span style="text-decoration:underline">Sapphire</span>
+          </p>
+        </div>
+        <div class="col-md-5">
+          <div class="card mb-5 shadow-sm">
+            <div class="card-body">
+              <div>
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-tedianshandianfahuo"></use>
+                </svg> Status
+                <button type="button" class="btn btn-md float-right" style="background-color: lightgreen;">
+                  <div id="circle" style="position: middle;"></div>
+                </button>
+              </div>
+              <hr>
+              <div>
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-yonghutouxiang"></use>
+                </svg> Curator
+                <div class="float-right"><i class="fas fa-gem"></i> Sapphire</div>
+              </div>
+              <hr>
+              <div>
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-tubiaozhizuomoban-"></use>
+                </svg> Contributions
+                <strong class="float-right">73</strong>
+              </div>
+              <hr>
+              <div>
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-icon"></use>
+                </svg> Upcoming
+                <div class="float-right">December 2020</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div id="First Column" class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/073.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/073.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/046.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/046.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/047.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/047.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/048.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/048.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/049.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/049.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/050.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/050.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/051.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/051.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/052.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/052.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/053.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/053.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/054.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/054.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/072.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/072.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/071.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/071.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/070.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/070.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/069.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/069.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/068.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/068.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/067.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/067.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/066.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/066.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/065.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/065.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/064.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/064.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/039.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/039.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/042.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/042.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/041.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/041.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/040.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/040.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/033.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/033.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/032.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/032.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/031.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/031.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/022.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/022.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/021.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/021.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/020.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/020.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/019.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/019.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/010.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/010.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/009.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/009.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/008.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/008.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/007.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/007.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/001.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/001.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/002.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/002.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="Second Column" class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/063.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/063.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/062.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/062.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/061.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/061.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/060.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/060.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/059.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/059.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/058.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/058.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/038.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/038.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/037.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/037.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/030.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/030.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/029.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/029.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/028.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/028.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/027.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/027.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/018.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/018.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/017.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/017.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/016.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/016.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/015.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/015.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/005.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/005.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/006.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/006.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/012.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/012.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/011.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/011.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/057.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/057.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/056.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/056.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/055.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/055.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/045.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/045.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/044.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/044.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/043.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/043.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/036.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/036.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/035.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/035.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/034.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/034.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/026.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/026.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/025.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/025.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/024.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/024.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/023.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/023.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/014.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/014.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/013.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/013.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/003.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/003.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div id="img" class="">
+              <img data-src="./Business/004.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Collected & Integrated BY<br>
+                <a href="https://unsplash.com">
+                  <span style="text-decoration:underline">
+                    Unsplash
+                  </span>
+                </a>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="./Business-Original/004.jpg" download="Business">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Download</button>
+                  </a>
+                </div>
+                <small class="text-muted">Updated in
+                  <span style="text-decoration:underline">November 2020</span>
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <nav class="bg-light border-top"><br>
+      <footer id="footer" class="text-muted">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9">
+              <p><i class="fas fa-gem"></i></p>
+              <p>Gallery is &copy; Sapphire, U can view and download what you appreciate. Enjoy!
+                <br>
+                New to Sapphire? <a href="../index.html">Visit the homepage</a> or read our <a href="./Sapphire-About.html">getting started guide</a>.
+              </p>
+            </div>
+            <div class="col-md-3">
+              <p class="float-right">
+                <a href="#"><span class="iconfont icon-top"></span>
+                  <br>
+                  Back to top
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer><br>
+    </nav>
+
+    <script>
+      // 一开始没有滚动的时候，出现在视窗中的图片也会加载
+      start();
+      // 当页面开始滚动的时候，遍历图片，如果图片出现在视窗中，就加载图片
+      var clock; //函数节流
+      $(window).on('scroll',function(){
+        if(clock){
+        clearTimeout(clock);
+        }
+        clock = setTimeout(function(){
+          start()
+        },50)
+      })
+      function start(){
+        $('.container img').not('[data-isLoading]').each(function () {
+          if (isShow($(this))) {
+            loadImg($(this));
+          }
+        })
+      }
+      // 判断图片是否出现在视窗的函数
+      function isShow($node){
+        return $node.offset().top <= $(window).height()+$(window).scrollTop();
+      }
+      // 加载图片的函数，就是把自定义属性data-src 存储的真正的图片地址，赋值给src
+      function loadImg($img){
+        $img.attr('src', $img.attr('data-src'));
+        // 已经加载的图片，我给它设置一个属性，值为1，作为标识
+        // 弄这个的初衷是因为，每次滚动的时候，所有的图片都会遍历一遍，这样有点浪费，所以做个标识，滚动的时候只遍历哪些还没有加载的图片
+        $img.attr('data-isLoading',1);
+      }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
