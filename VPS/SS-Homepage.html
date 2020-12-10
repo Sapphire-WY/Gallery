@@ -35,6 +35,10 @@
         background-color: green;
         border-radius: 50%;
       }
+      #button{
+        position: relative;
+        z-index: 10;
+      }
     </style>
     <style type="text/css">
       .icon {
@@ -110,7 +114,7 @@
               <!-- Target -->
               <input id="foo" style="width:57%;" value="https://coding-pages-bucket-3489573-8044800-5710-383553-1303222703.cos-website.ap-hongkong.myqcloud.com/IOS-SS.conf">
               <!-- Trigger -->
-              <button type="button" class="btn btn-light" class="btn" data-clipboard-target="#foo" style="background-color: lightgreen;">
+              <button id="button" type="button" class="btn btn-light" class="btn" data-clipboard-target="#foo" style="background-color: lightgreen;">
                 <div id="circle" style="position: middle;"></div>
               </button>
             </p>
