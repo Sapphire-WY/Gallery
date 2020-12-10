@@ -29,6 +29,12 @@
         padding-top: 5.4%;
         color: white;
       }
+      #circle{
+        width: 6px;
+        height: 6px;
+        background-color: green;
+        border-radius: 50%;
+      }
     </style>
     <style type="text/css">
       .icon {
@@ -104,10 +110,8 @@
               <!-- Target -->
               <input id="foo" style="width:57%;" value="https://coding-pages-bucket-3489573-8044800-5710-383553-1303222703.cos-website.ap-hongkong.myqcloud.com/IOS-SS.conf">
               <!-- Trigger -->
-              <button class="btn" data-clipboard-target="#foo">
-                <svg class="icon" aria-hidden="true">
-                  <use xlink:href="#icon-fuzhi1"></use>
-               </svg>
+              <button type="button" class="btn btn-light" class="btn" data-clipboard-target="#foo" style="background-color: lightgreen;">
+                <div id="circle" style="position: middle;"></div>
               </button>
             </p>
             <p id="p1" style="font-size:20px;">
@@ -132,7 +136,7 @@
     <img src="./shearouda.jpg" class="img-fluid" alt="Responsive image" id="img-bg">
 
     <nav class="bg-light"><br>
-      <footer class="text-muted>
+      <footer class="text-muted">
         <div class="container">
           <div class="row">
             <div class="col-md-9">
