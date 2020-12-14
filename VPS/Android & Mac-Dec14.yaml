@@ -33,44 +33,36 @@ secret: ''
 # external-ui: folder
 
 proxies:
-  - {"name":"🇭🇰 动态BGP+IPLC|广港01|3x","type":"vmess","server":"flbgp.yixuedianzishu.com","port":58011,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true}
-  - {"name":"🇸🇬 Anycast|新加坡","type":"vmess","server":"flcn.yixuedianzishu.com","port":51511,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/564dfa20/","ws-headers":{"Host":"flcn.yixuedianzishu.com"},"tls":true,"skip-cert-verify":true}
-  - {"name":"🇯🇵 Anycast|日本","type":"vmess","server":"flcn.yixuedianzishu.com","port":51512,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/564dfa20/","ws-headers":{"Host":"flcn.yixuedianzishu.com"},"tls":true,"skip-cert-verify":true}
-  - {"name":"🇺🇲 Anycast|美国","type":"vmess","server":"flcn.yixuedianzishu.com","port":51513,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/564dfa20/","ws-headers":{"Host":"flcn.yixuedianzishu.com"},"tls":true,"skip-cert-verify":true}
-  - {"name":"🇬🇧 Anycast|英国","type":"vmess","server":"flcn.yixuedianzishu.com","port":51518,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/564dfa20/","ws-headers":{"Host":"flcn.yixuedianzishu.com"},"tls":true,"skip-cert-verify":true}
-  - {"name":"🇩🇪 Anycast|德国","type":"vmess","server":"flcn.yixuedianzishu.com","port":51519,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/564dfa20/","ws-headers":{"Host":"flcn.yixuedianzishu.com"},"tls":true,"skip-cert-verify":true}
-  - {"name":"🇨🇦 Anycast|加拿大","type":"vmess","server":"flcn.yixuedianzishu.com","port":51520,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/564dfa20/","ws-headers":{"Host":"flcn.yixuedianzishu.com"},"tls":true,"skip-cert-verify":true}
-  - {"name":"🇰🇷 Anycast|韩国","type":"vmess","server":"flcn.yixuedianzishu.com","port":51522,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/564dfa20/","ws-headers":{"Host":"flcn.yixuedianzishu.com"},"tls":true,"skip-cert-verify":true}
-  - {"name":"🇷🇺 Anycast|俄罗斯","type":"vmess","server":"flcn.yixuedianzishu.com","port":51525,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/564dfa20/","ws-headers":{"Host":"flcn.yixuedianzishu.com"},"tls":true,"skip-cert-verify":true}
-  - {"name":"🇳🇱 Anycast|荷兰","type":"vmess","server":"flcn.yixuedianzishu.com","port":51523,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/564dfa20/","ws-headers":{"Host":"flcn.yixuedianzishu.com"},"tls":true,"skip-cert-verify":true}
-  - {"name":"🇮🇳 Anycast|印度","type":"vmess","server":"flcn.yixuedianzishu.com","port":51524,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/564dfa20/","ws-headers":{"Host":"flcn.yixuedianzishu.com"},"tls":true,"skip-cert-verify":true}
-  - {"name":"🇫🇷 Anycast|法国","type":"vmess","server":"flcn.yixuedianzishu.com","port":51526,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/564dfa20/","ws-headers":{"Host":"flcn.yixuedianzishu.com"},"tls":true,"skip-cert-verify":true}
-  - {"name":"🇦🇷 Anycast|阿根廷","type":"vmess","server":"flcn.yixuedianzishu.com","port":51529,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/564dfa20/","ws-headers":{"Host":"flcn.yixuedianzishu.com"},"tls":true,"skip-cert-verify":true}
-  - {"name":"🇧🇷 Anycast|巴西","type":"vmess","server":"flcn.yixuedianzishu.com","port":51530,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/564dfa20/","ws-headers":{"Host":"flcn.yixuedianzishu.com"},"tls":true,"skip-cert-verify":true}
-  - {"name":"🇹🇷 Anycast|土耳其","type":"vmess","server":"flcn.yixuedianzishu.com","port":51531,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/564dfa20/","ws-headers":{"Host":"flcn.yixuedianzishu.com"},"tls":true,"skip-cert-verify":true}
-  - {"name":"🇦🇺 Anycast|澳大利亚","type":"vmess","server":"flcn.yixuedianzishu.com","port":51521,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/564dfa20/","ws-headers":{"Host":"flcn.yixuedianzishu.com"},"tls":true,"skip-cert-verify":true}
+  - {"name":"🇭🇰 Dynamic|HK-I|3x","type":"vmess","server":"flbgp.yixuedianzishu.com","port":58011,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true}
+  - {"name":"🇭🇰 Dynamic|HK-II|3x","type":"vmess","server":"flbgp.yixuedianzishu.com","port":58012,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true}
+  - {"name":"🇭🇰 Dynamic|HK-I(Origin)|3x","type":"vmess","server":"flbgp.yixuedianzishu.com","port":58002,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true}
+  - {"name":"🇭🇰 Dynamic|HK-II(Origin)|3x","type":"vmess","server":"flbgp.yixuedianzishu.com","port":58003,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true}
+  - {"name":"🇸🇬 Anycast|Singapore","type":"vmess","server":"flcn.yixuedianzishu.com","port":51511,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/564dfa20/","ws-headers":{"Host":"flcn.yixuedianzishu.com"},"tls":true,"skip-cert-verify":true}
+  - {"name":"🇯🇵 Anycast|Japan","type":"vmess","server":"flcn.yixuedianzishu.com","port":51512,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/564dfa20/","ws-headers":{"Host":"flcn.yixuedianzishu.com"},"tls":true,"skip-cert-verify":true}
+  - {"name":"🇺🇲 Anycast|USA","type":"vmess","server":"flcn.yixuedianzishu.com","port":51513,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/564dfa20/","ws-headers":{"Host":"flcn.yixuedianzishu.com"},"tls":true,"skip-cert-verify":true}
+  - {"name":"🇬🇧 Anycast|UK","type":"vmess","server":"flcn.yixuedianzishu.com","port":51518,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/564dfa20/","ws-headers":{"Host":"flcn.yixuedianzishu.com"},"tls":true,"skip-cert-verify":true}
+  - {"name":"🇩🇪 Anycast|Germany","type":"vmess","server":"flcn.yixuedianzishu.com","port":51519,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/564dfa20/","ws-headers":{"Host":"flcn.yixuedianzishu.com"},"tls":true,"skip-cert-verify":true}
+  - {"name":"🇨🇦 Anycast|Canada","type":"vmess","server":"flcn.yixuedianzishu.com","port":51520,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/564dfa20/","ws-headers":{"Host":"flcn.yixuedianzishu.com"},"tls":true,"skip-cert-verify":true}
+  - {"name":"🇳🇱 Anycast|Netherland","type":"vmess","server":"flcn.yixuedianzishu.com","port":51523,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/564dfa20/","ws-headers":{"Host":"flcn.yixuedianzishu.com"},"tls":true,"skip-cert-verify":true}
+  - {"name":"🇦🇺 Anycast|Australia","type":"vmess","server":"flcn.yixuedianzishu.com","port":51521,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/564dfa20/","ws-headers":{"Host":"flcn.yixuedianzishu.com"},"tls":true,"skip-cert-verify":true}
 
 proxy-groups:
--
-  name: '💎 AUTO'
+
+- name: 💎 AUTOMATIC
   type: url-test
   proxies:
-    - '🇭🇰 动态BGP+IPLC|广港01|3x'
-    - '🇸🇬 Anycast|新加坡'
-    - '🇯🇵 Anycast|日本'
-    - '🇺🇲 Anycast|美国'
-    - '🇬🇧 Anycast|英国'
-    - '🇩🇪 Anycast|德国'
-    - '🇨🇦 Anycast|加拿大'
-    - '🇰🇷 Anycast|韩国'
-    - '🇷🇺 Anycast|俄罗斯'
-    - '🇳🇱 Anycast|荷兰'
-    - '🇮🇳 Anycast|印度'
-    - '🇫🇷 Anycast|法国'
-    - '🇦🇷 Anycast|阿根廷'
-    - '🇧🇷 Anycast|巴西'
-    - '🇹🇷 Anycast|土耳其'
-    - '🇦🇺 Anycast|澳大利亚'
+    - '🇭🇰 Dynamic|HK-I|3x'
+    - '🇭🇰 Dynamic|HK-II|3x'
+    - '🇭🇰 Dynamic|HK-I(Origin)|3x'
+    - '🇭🇰 Dynamic|HK-II(Origin)|3x'
+    - '🇸🇬 Anycast|Singapore'
+    - '🇯🇵 Anycast|Japan'
+    - '🇺🇲 Anycast|USA'
+    - '🇬🇧 Anycast|UK'
+    - '🇩🇪 Anycast|Germany'
+    - '🇨🇦 Anycast|Canada'
+    - '🇳🇱 Anycast|Netherland'
+    - '🇦🇺 Anycast|Australia'
   url: 'http://www.google.com'
   interval: 300
 
