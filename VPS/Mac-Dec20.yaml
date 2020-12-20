@@ -1,6 +1,6 @@
 #---------------------------------------------------#
-## 更新：2020-12-07 04:21:06
-## 感谢：https://github.com/Hackl0us/SS-Rule-Snippet
+## Sapphire
+## 2020.12.20
 #---------------------------------------------------#
 
 # HTTP 代理端口
@@ -33,38 +33,32 @@ secret: ''
 # external-ui: folder
 
 proxies:
-  - {"name":"🇭🇰 Dynamic|HK-I|3x","type":"vmess","server":"flbgp.yixuedianzishu.com","port":58011,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true}
-  - {"name":"🇭🇰 Dynamic|HK-II|3x","type":"vmess","server":"flbgp.yixuedianzishu.com","port":58012,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true}
-  - {"name":"🇭🇰 Dynamic|HK-I(Origin)|3x","type":"vmess","server":"flbgp.yixuedianzishu.com","port":58002,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true}
-  - {"name":"🇭🇰 Dynamic|HK-II(Origin)|3x","type":"vmess","server":"flbgp.yixuedianzishu.com","port":58003,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true}
-  - {"name":"🇸🇬 Anycast|Singapore","type":"vmess","server":"flcn.yixuedianzishu.com","port":51511,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/564dfa20/","ws-headers":{"Host":"flcn.yixuedianzishu.com"},"tls":true,"skip-cert-verify":true}
-  - {"name":"🇯🇵 Anycast|Japan","type":"vmess","server":"flcn.yixuedianzishu.com","port":51512,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/564dfa20/","ws-headers":{"Host":"flcn.yixuedianzishu.com"},"tls":true,"skip-cert-verify":true}
-  - {"name":"🇺🇲 Anycast|USA","type":"vmess","server":"flcn.yixuedianzishu.com","port":51513,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/564dfa20/","ws-headers":{"Host":"flcn.yixuedianzishu.com"},"tls":true,"skip-cert-verify":true}
-  - {"name":"🇬🇧 Anycast|UK","type":"vmess","server":"flcn.yixuedianzishu.com","port":51518,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/564dfa20/","ws-headers":{"Host":"flcn.yixuedianzishu.com"},"tls":true,"skip-cert-verify":true}
-  - {"name":"🇩🇪 Anycast|Germany","type":"vmess","server":"flcn.yixuedianzishu.com","port":51519,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/564dfa20/","ws-headers":{"Host":"flcn.yixuedianzishu.com"},"tls":true,"skip-cert-verify":true}
-  - {"name":"🇨🇦 Anycast|Canada","type":"vmess","server":"flcn.yixuedianzishu.com","port":51520,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/564dfa20/","ws-headers":{"Host":"flcn.yixuedianzishu.com"},"tls":true,"skip-cert-verify":true}
-  - {"name":"🇳🇱 Anycast|Netherland","type":"vmess","server":"flcn.yixuedianzishu.com","port":51523,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/564dfa20/","ws-headers":{"Host":"flcn.yixuedianzishu.com"},"tls":true,"skip-cert-verify":true}
-  - {"name":"🇦🇺 Anycast|Australia","type":"vmess","server":"flcn.yixuedianzishu.com","port":51521,"uuid":"0fcbc9cf-b00c-3a89-82b4-b63e9ee42a28","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/564dfa20/","ws-headers":{"Host":"flcn.yixuedianzishu.com"},"tls":true,"skip-cert-verify":true}
+  - { name: 🇭🇰 HKT-NF|HK-I, type: ss, server: aga1.foxicloud.com, port: 30001, cipher: chacha20-ietf-poly1305, password: ff68fee3-146f-46c9-a72d-25841213de2f, udp: true }
+  - { name: 🇭🇰 HKT-NF|HK-II, type: ss, server: aga1.foxicloud.com, port: 30002, cipher: chacha20-ietf-poly1305, password: ff68fee3-146f-46c9-a72d-25841213de2f, udp: true }
+  - { name: 🇯🇵 ORIGIN|Japan, type: ss, server: aga1.foxicloud.com, port: 30005, cipher: chacha20-ietf-poly1305, password: ff68fee3-146f-46c9-a72d-25841213de2f, udp: true }
+  - { name: 🇯🇵 GMO|Japan, type: ss, server: master-6.foxicloud.com, port: 50006, cipher: chacha20-ietf-poly1305, password: ff68fee3-146f-46c9-a72d-25841213de2f, udp: true }
+  - { name: 🇺🇸 GIA-IT|USA, type: ss, server: gia1.foxicloud.com, port: 80, cipher: chacha20-ietf-poly1305, password: ff68fee3-146f-46c9-a72d-25841213de2f, udp: true }
+  - { name: 🇰🇷 AWS|Korea, type: ss, server: master-6.foxicloud.com, port: 50005, cipher: chacha20-ietf-poly1305, password: ff68fee3-146f-46c9-a72d-25841213de2f, udp: true }
+  - { name: 🇮🇳 AWS|India, type: ss, server: master-6.foxicloud.com, port: 50009, cipher: chacha20-ietf-poly1305, password: ff68fee3-146f-46c9-a72d-25841213de2f, udp: true }
+  - { name: 🇩🇪 AWS|Germany, type: ss, server: master-6.foxicloud.com, port: 50010, cipher: chacha20-ietf-poly1305, password: ff68fee3-146f-46c9-a72d-25841213de2f, udp: true }
+  - { name: 🇵🇭 CHOOP|Philippines, type: ss, server: master-6.foxicloud.com, port: 50011, cipher: chacha20-ietf-poly1305, password: ff68fee3-146f-46c9-a72d-25841213de2f, udp: true }
 
 proxy-groups:
+  - name: 💎 AUTOMATIC
+    type: url-test
+    proxies:
+      - '🇭🇰 HKT-NF|HK-I'
+      - '🇭🇰 HKT-NF|HK-II'
+      - '🇯🇵 ORIGIN|Japan'
+      - '🇯🇵 GMO|Japan'
+      - '🇺🇸 GIA-IT|USA'
+      - '🇰🇷 AWS|Korea'
+      - '🇮🇳 AWS|India'
+      - '🇩🇪 AWS|Germany'
+      - '🇵🇭 CHOOP|Philippines'
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
 
-- name: 💎 AUTOMATIC
-  type: url-test
-  proxies:
-    - '🇭🇰 Dynamic|HK-I|3x'
-    - '🇭🇰 Dynamic|HK-II|3x'
-    - '🇭🇰 Dynamic|HK-I(Origin)|3x'
-    - '🇭🇰 Dynamic|HK-II(Origin)|3x'
-    - '🇸🇬 Anycast|Singapore'
-    - '🇯🇵 Anycast|Japan'
-    - '🇺🇲 Anycast|USA'
-    - '🇬🇧 Anycast|UK'
-    - '🇩🇪 Anycast|Germany'
-    - '🇨🇦 Anycast|Canada'
-    - '🇳🇱 Anycast|Netherland'
-    - '🇦🇺 Anycast|Australia'
-  url: 'http://www.google.com'
-  interval: 300
 
 cfw-latency-timeout: 3000
 cfw-latency-url: http://www.gstatic.com/generate_204
